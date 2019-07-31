@@ -10,16 +10,13 @@ Navn: Morten Therkildsen
 
 
 
-
-
-
 """
 
 import random
 
-suits = ('Hjerter', 'Ruder', 'Spar', 'Klør')
-ranks = ('To', 'Tre', 'Fire', 'Fem', 'Seks', 'Syv', 'Otte', 'Ni', 'Ti', 'Knægt', 'Dronning', 'Konge', 'Es')
-values ={'To': 2, 'Tre':3, 'Fire':4, 'Fem':5, 'Seks':6, 'Syv':7, 'Otte':8, 'Ni':9, 'Ti':10, 'Knægt':10, 'Dronning':10, 'Konge':10, 'Es':11}
+suits = ('Heart', 'Diamond', 'Spade', 'Club')
+ranks = ('Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'Ten', 'Jack', 'Queen', 'King', 'Ace')
+values ={'Two': 2, 'Three':3, 'Four':4, 'Five':5, 'Six':6, 'Seven':7, 'Eight':8, 'Nine':9, 'Ten':10, 'Jack':10, 'Queen':10, 'King':10, 'Ace':11}
 
 playing = True
 
