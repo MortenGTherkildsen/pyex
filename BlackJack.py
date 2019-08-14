@@ -4,10 +4,25 @@ Python Eksamen, KEA
 Navn: Morten Therkildsen
 
 
+Classes:
+    Card  [__init__, __str__]
+    Deck  [__init__, __str__, shuffle, deal]
+    Hand  [__init__, receive_card, adjust_for_ace]
+    Chips  [__init__, win_bet, loose_bet]
 
+Methods:
+    take_bet(chips)
+    hit(deck, hand)
+    hit_or_stand(deck, hand)
+    show_some(player, dealer)    
+    show_all(player, dealer)
+    player_busts(player, dealer, chips)
+    player_wins(player, dealer, chips)
+    dealer_busts(player, dealer, chips)
+    dealer_wins(player, dealer, chips)
+    push(player,dealer)
 
-
-
+Main code:
 
 
 """
