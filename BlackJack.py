@@ -35,6 +35,9 @@ values ={'Two': 2, 'Three':3, 'Four':4, 'Five':5, 'Six':6, 'Seven':7, 'Eight':8,
 
 playing = True
 
+
+# ---------------------- Classes ------------------
+
 class Card:
     # Initialise Card with suit and rank
     def __init__(self, suit,rank):
@@ -68,10 +71,8 @@ class Deck:
     def deal (self):
         single_card = self.deck.pop()
         return single_card
-"""
-test_deck = Deck()
-print(test_deck)
-"""
+
+
 class Hand:
     # Constructs an empty Hand
     def __init__(self):
@@ -92,14 +93,6 @@ class Hand:
             self.value -= 10
             self.aces -= 1
 
-test_deck = Deck()
-test_deck.shuffle()
-test_player = Hand()
-test_player.receive_card(test_deck.deal())
-test_player.receive_card(test_deck.deal())
-test_player.value
-for card in test_player.cards:
-    print(card)
 
 class Chips:
 
@@ -112,6 +105,8 @@ class Chips:
     
     def lose_bet(self):
         self.total -= self.bet # Taking away losing bet
+
+# -------------------- Methods ---------------------
 
 def take_bet(chips):
 
@@ -179,6 +174,8 @@ def dealer_wins(player,dealer,chips):
 def push(player,dealer):
     print("Dealer and Player tie, Push.")
 
+
+# ----------------- Main Code -----------------
 
 while True:
     print("IT'S BLACKJACK TIME!")
